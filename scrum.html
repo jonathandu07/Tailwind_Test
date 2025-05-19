@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services SCRUM - Création de projet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-semibold text-gray-800">Création de projet</h1>
+    <nav class="space-x-6 text-sm">
+      <a href="#" class="text-gray-700 hover:text-blue-600">Services</a>
+      <a href="#" class="text-gray-700 hover:text-blue-600">Conversation</a>
+      <a href="#" class="text-gray-700 hover:text-blue-600">Profil</a>
+      <a href="#" class="text-red-600 font-medium">Se déconnecter</a>
+    </nav>
+  </header>
+
+  <!-- Tabs -->
+  <div class="bg-gray-50 p-2 flex justify-center space-x-4 border-b">
+    <button class="text-blue-600 text-lg">📊</button>
+    <button class="text-blue-600 text-lg">👥</button>
+    <button class="text-blue-600 text-lg">💬</button>
+  </div>
+
+  <!-- Main content -->
+  <main class="flex flex-1 p-6 gap-4">
+    <!-- Left panel: Icon and form -->
+    <section class="flex-1 bg-white rounded shadow p-6">
+      <!-- Project icon -->
+      <div class="mb-6">
+        <img src="https://cdn-icons-png.flaticon.com/512/3655/3655572.png" alt="Création" class="w-16 h-16">
+      </div>
+      <!-- Project creation form -->
+      <form class="space-y-4">
+        <div>
+          <label class="block text-gray-700">Nom du projet</label>
+          <input type="text" class="mt-1 w-full border border-gray-300 rounded p-2">
+        </div>
+        <div>
+          <label class="block text-gray-700">Description</label>
+          <textarea rows="3" class="mt-1 w-full border border-gray-300 rounded p-2"></textarea>
+        </div>
+        <div>
+          <label class="block text-gray-700">Date de début</label>
+          <input type="date" class="mt-1 w-full border border-gray-300 rounded p-2">
+        </div>
+        <div>
+          <label class="block text-gray-700">Participants</label>
+          <input type="text" placeholder="Ajouter des membres..." class="mt-1 w-full border border-gray-300 rounded p-2">
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Créer le projet</button>
+      </form>
+    </section>
+
+    <!-- Right panel: preview/infos -->
+    <aside class="w-80 bg-gray-50 rounded shadow p-4">
+      <h2 class="text-lg font-semibold text-gray-800 mb-4">Détails ou modèle</h2>
+      <p class="text-sm text-gray-600">Vous pouvez prévisualiser ici le projet ou choisir un modèle SCRUM existant.</p>
+      <!-- Exemple de contenu à venir -->
+      <div class="mt-4 p-3 bg-white border rounded text-sm text-gray-500 italic">
+        Aucun modèle sélectionné.
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-xs text-gray-500 border-t p-4 flex justify-between">
+    <div class="space-x-4">
+      <a href="#" class="hover:text-blue-600">Mentions-légales</a>
+      <a href="#" class="hover:text-blue-600">CGV</a>
+    </div>
+    <div class="font-semibold">
+      &copy; MAC
+    </div>
+  </footer>
+</body>
+</html>
