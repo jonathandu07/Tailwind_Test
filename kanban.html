@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kanban SCRUM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6 font-sans">
+  <h1 class="text-3xl font-bold mb-6 text-center">Kanban - Gestion de projet</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <!-- À faire -->
+    <div class="bg-white rounded shadow p-4">
+      <h2 class="text-xl font-semibold mb-4 text-blue-600">À faire</h2>
+      <div class="space-y-2">
+        <div class="bg-blue-100 border-l-4 border-blue-500 p-3 rounded">Créer la maquette</div>
+        <div class="bg-blue-100 border-l-4 border-blue-500 p-3 rounded">Configurer Tailwind</div>
+      </div>
+    </div>
+
+    <!-- En cours -->
+    <div class="bg-white rounded shadow p-4">
+      <h2 class="text-xl font-semibold mb-4 text-yellow-600">En cours</h2>
+      <div class="space-y-2">
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-3 rounded">Développer le backend</div>
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-3 rounded">Créer les composants Vue</div>
+      </div>
+    </div>
+
+    <!-- Terminé -->
+    <div class="bg-white rounded shadow p-4">
+      <h2 class="text-xl font-semibold mb-4 text-green-600">Terminé</h2>
+      <div class="space-y-2">
+        <div class="bg-green-100 border-l-4 border-green-500 p-3 rounded">Planification du projet</div>
+        <div class="bg-green-100 border-l-4 border-green-500 p-3 rounded">Réunion de lancement</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
